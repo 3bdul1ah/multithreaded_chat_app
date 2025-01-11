@@ -6,6 +6,8 @@
     - [Step 1: Get the Code](#step-1-get-the-code)
     - [Step 2: Create a Virtual Environment](#step-2-create-a-virtual-environment)
     - [Step 3: Install Dependencies](#step-3-install-dependencies)
+    - [Step 4: Install MySQL](#step-4-install-mysql)
+
 2. [Running the Chat Application](#-running-the-chat-application)
     - [Step 1: Configure the Database](#step-1-configure-the-database)
         - [Install MySQL on Ubuntu 20.04](#install-mysql-on-ubuntu-2004)
@@ -64,14 +66,9 @@ pip install -r requirements.txt
 
 ---
 
-## 🖥 Running the Chat Application
 
-### Step 1: Configure the Database
-
-
+### Step 4: Install MySQL
 To install and access MySQL on Ubuntu 20.04, follow these steps:
-
-0. **Install MySQL client and server**:
     ```bash
     sudo apt install mysql-client-core-8.0
     sudo apt install mysql-server
@@ -80,7 +77,9 @@ To install and access MySQL on Ubuntu 20.04, follow these steps:
     ```
 
 ---
+## 🖥 Running the Chat Application
 
+### Step 1: Configure the Database
 
 1. **Login to MySQL**:
 
