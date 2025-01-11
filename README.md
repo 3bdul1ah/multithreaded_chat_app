@@ -164,7 +164,7 @@ Once the server and client are operational, you can start interacting with the s
 - **Log In**:  
   To log in to your account, use the command:  
   `/login <username> <password>`  
-  Example: `/login ahmed 123`
+  Example: `/login abdullah 123`
 
 #### **Chat Room Interaction:**
 
