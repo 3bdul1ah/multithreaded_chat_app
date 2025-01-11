@@ -1,5 +1,23 @@
-
 # Multithreaded Chat Application Setup Guide
+
+## 📑 Table of Contents
+1. [Installation](#-installation)
+    - [Step 1: Get the Code](#step-1-get-the-code)
+    - [Step 2: Create a Virtual Environment](#step-2-create-a-virtual-environment)
+    - [Step 3: Install Dependencies](#step-3-install-dependencies)
+    - [Step 4: Install MySQL and Create the Database](#step-4-install-mysql-and-create-the-database)
+
+2. [Running the Chat Application](#-running-the-chat-application)
+    - [Step 1: Update `db_config` in Python](#step-1-update-db_config-in-python)
+    - [Step 2: Start the Server](#step-2-start-the-server)
+    - [Step 3: Start the Client](#step-3-start-the-client)
+3. [Usage Guide](#-usage-guide)
+    - [Account Management](#account-management)
+    - [Chat Room Interaction](#chat-room-interaction)
+    - [Direct Messaging](#direct-messaging)
+    - [Help and Navigation](#help-and-navigation)
+
+---
 
 ## 📦 Installation
 
@@ -44,31 +62,26 @@ pip install -r requirements.txt
 
 ---
 
-## 🖥 Running the Chat Application
-
-### Step 1: Configure the Database
-
+### Step 4: Install MySQL and Create the Database
 
 To install and access MySQL on Ubuntu 20.04, follow these steps:
 
-0. **Install MySQL client and server**:
-    ```bash
-    sudo apt install mysql-client-core-8.0
-    sudo apt install mysql-server
-    sudo systemctl start mysql
-    sudo systemctl status mysql
-    ```
+1. **Install MySQL**:
 
----
+```bash
+sudo apt install mysql-client-core-8.0
+sudo apt install mysql-server
+sudo systemctl start mysql
+sudo systemctl status mysql
+```
 
-
-1. **Login to MySQL**:
+2. **Login to MySQL**:
 
 ```bash
 sudo mysql -u root -p
 ```
 
-2. **Create the Database and Tables**:
+3. **Create the Database and Tables**:
 
 Run the following SQL commands in the MySQL terminal:
 
@@ -100,7 +113,12 @@ CREATE TABLE messages (
 );
 ```
 
-### Step 2: Update `db_config` in Python
+---
+
+## 🖥 Running the Chat Application
+
+
+### Step 1: Update `db_config` in Python
 
 In the project, update the `db_config` dictionary located in `server.py` to match your MySQL setup. Specifically, change the password to your MySQL root password:
 
@@ -115,7 +133,7 @@ db_config = {
 
 This `'azaz'` is the password used in our case, so replace it with your actual MySQL root password in the above configuration.
 
-### Step 3: Start the Server
+### Step 2: Start the Server
 
 Run the server in one terminal:
 
@@ -123,7 +141,7 @@ Run the server in one terminal:
 python3 server.py
 ```
 
-### Step 4: Start the Client
+### Step 3: Start the Client
 
 Run the client in a separate terminal:
 
@@ -132,7 +150,6 @@ python3 client.py
 ```
 
 ---
-
 
 ## 🌟 Usage Guide
 
