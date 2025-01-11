@@ -1,4 +1,3 @@
-
 # Multithreaded Chat Application Setup Guide
 
 ## 📑 Table of Contents
@@ -66,15 +65,14 @@ pip install -r requirements.txt
 
 ---
 
-
 ### Step 4: Install MySQL
 To install and access MySQL on Ubuntu 20.04, follow these steps:
-    ```bash
-    sudo apt install mysql-client-core-8.0
-    sudo apt install mysql-server
-    sudo systemctl start mysql
-    sudo systemctl status mysql
-    ```
+```bash
+sudo apt install mysql-client-core-8.0
+sudo apt install mysql-server
+sudo systemctl start mysql
+sudo systemctl status mysql
+```
 
 ---
 ## 🖥 Running the Chat Application
@@ -151,7 +149,6 @@ python3 client.py
 ```
 
 ---
-
 
 ## 🌟 Usage Guide
 
