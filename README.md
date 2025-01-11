@@ -3,9 +3,8 @@
 ## 📑 Table of Contents
 1. [Installation](#-installation)
     - [Step 1: Get the Code](#step-1-get-the-code)
-    - [Step 2: Create a Virtual Environment](#step-2-create-a-virtual-environment)
-    - [Step 3: Install Dependencies](#step-3-install-dependencies)
-    - [Step 4: Install MySQL and Create the Database](#step-4-install-mysql-and-create-the-database)
+    - [Step 2: Install Dependencies](#step-2-install-dependencies)
+    - [Step 3: Install MySQL and Create the Database](#step-3-install-mysql-and-create-the-database)
 
 2. [Running the Chat Application](#-running-the-chat-application)
     - [Step 1: Update `db_config` in Python](#step-1-update-db_config-in-python)
@@ -30,39 +29,17 @@ git clone https://github.com/3bdul1ah/multithreaded_chat_app.git
 cd multithreaded_chat_app
 ```
 
-### Step 2: Create a Virtual Environment
+### Step 2: Install Dependencies
 
-Create a virtual environment to manage dependencies:
-
-```bash
-python3 -m venv venv
-```
-
-Activate the virtual environment:
-
-- For Windows:
+Install the required Python packages directly:
 
 ```bash
-venv\Scripts\activate
-```
-
-- For Mac/Linux:
-
-```bash
-source venv/bin/activate
-```
-
-### Step 3: Install Dependencies
-
-Install required packages:
-
-```bash
-pip install -r requirements.txt
+pip install socket threading mysql-connector-python hashlib datetime
 ```
 
 ---
 
-### Step 4: Install MySQL and Create the Database
+### Step 3: Install MySQL and Create the Database
 
 To install and access MySQL on Ubuntu 20.04, follow these steps:
 
