@@ -1,6 +1,26 @@
 
 # Multithreaded Chat Application Setup Guide
 
+## 📑 Table of Contents
+1. [Installation](#-installation)
+    - [Step 1: Get the Code](#step-1-get-the-code)
+    - [Step 2: Create a Virtual Environment](#step-2-create-a-virtual-environment)
+    - [Step 3: Install Dependencies](#step-3-install-dependencies)
+2. [Running the Chat Application](#-running-the-chat-application)
+    - [Step 1: Configure the Database](#step-1-configure-the-database)
+        - [Install MySQL on Ubuntu 20.04](#install-mysql-on-ubuntu-2004)
+        - [Create the Database and Tables](#create-the-database-and-tables)
+    - [Step 2: Update `db_config` in Python](#step-2-update-db_config-in-python)
+    - [Step 3: Start the Server](#step-3-start-the-server)
+    - [Step 4: Start the Client](#step-4-start-the-client)
+3. [Usage Guide](#-usage-guide)
+    - [Account Management](#account-management)
+    - [Chat Room Interaction](#chat-room-interaction)
+    - [Direct Messaging](#direct-messaging)
+    - [Help and Navigation](#help-and-navigation)
+
+---
+
 ## 📦 Installation
 
 ### Step 1: Get the Code
