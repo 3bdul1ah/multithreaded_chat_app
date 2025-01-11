@@ -48,7 +48,19 @@ pip install -r requirements.txt
 
 ### Step 1: Configure the Database
 
-Before starting the application, ensure that the MySQL database is set up properly.
+
+To install and access MySQL on Ubuntu 20.04, follow these steps:
+
+0. **Install MySQL client and server**:
+    ```bash
+    sudo apt install mysql-client-core-8.0
+    sudo apt install mysql-server
+    sudo systemctl start mysql
+    sudo systemctl status mysql
+    ```
+
+---
+
 
 1. **Login to MySQL**:
 
@@ -121,16 +133,51 @@ python3 client.py
 
 ---
 
-## Features
 
-- Real-time messaging
-- Group chat functionality
-- Direct messaging
-- Multithreading support
+## 🌟 Usage Guide
+
+Once the server and client are operational, you can start interacting with the system using the following commands:
+
+#### **Account Management:**
+
+- **Register a New Account**:  
+  To create a new account, use the command:  
+  `/register <username> <password>`  
+  Example: `/register abdullah 123`
+
+- **Log In**:  
+  To log in to your account, use the command:  
+  `/login <username> <password>`  
+  Example: `/login ahmed 123`
+
+#### **Chat Room Interaction:**
+
+- **Join or Create a Room**:  
+  To join or create a new chat room, use the command:  
+  `/join <room_name>`  
+  Example: `/join tech_chat`  
+  You can chat freely with users in the same room.
+
+#### **Direct Messaging:**
+
+- **Send a Private Message**:  
+  To start a private conversation with a user, use:  
+  `/dm <username>`  
+  Example: `/dm abdullah`  
+  This allows for private messaging between users.
+
+### **Help and Navigation:**
+
+- **View Help**:  
+  To get a list of available commands, use:  
+  `/help`
+
+- **Return to Main Menu**:  
+  To return to the main menu, use:  
+  `/back`
+
+- **Logout**:  
+  To log out from the chat, use:  
+  `/exit`
 
 ---
-
-## Notes
-
-- Make sure MySQL is running and you have created the `chat_db` database before starting the server.
-- Ensure that the database credentials in the `db_config` are correct and match your MySQL setup.
